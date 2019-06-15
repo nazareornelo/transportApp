@@ -1,0 +1,110 @@
+<div class="bg">
+<div class="center">       
+<p>
+<mat-form-field>
+    <input matInput 
+        maxLength = "60"
+        placeholder="name" #name>
+</mat-form-field> 
+<mat-form-field>
+    <input matInput 
+        maxLength = "60"
+        placeholder="normalizedName" #normalizedName>
+</mat-form-field>
+</p>
+<p>
+<mat-form-field>
+    <input matInput 
+        placeholder="city" #city>
+</mat-form-field>
+<mat-form-field>
+    <mat-label>function</mat-label>
+    <mat-select [(value)]="function">
+        <mat-option value="AIRPORT">AIRPORT</mat-option>
+      <mat-option value="RAIL_TERMINAL">RAIL_TERMINAL</mat-option>
+      <mat-option value="SEAPORT">SEAPORT</mat-option>
+    </mat-select>
+</mat-form-field>
+
+</p>
+<p> 
+<mat-form-field>
+    <input matInput 
+        maxLength = "2"
+        placeholder="country" #country>
+</mat-form-field> 
+<mat-form-field>
+    <mat-label>continent</mat-label>
+    <mat-select [(value)]="continent">
+        <mat-option value="AFRICA">AFRICA</mat-option>
+        <mat-option value="ANTARCTICA">ANTARCTICA</mat-option>
+        <mat-option value="AFRICA">AFRICA</mat-option>
+        <mat-option value="ASIA">ASIA</mat-option>
+        <mat-option value="EUROPE">EUROPE</mat-option>
+        <mat-option value="NORTH_AMERICA">NORTH_AMERICA</mat-option>
+        <mat-option value="OCEANIA">OCEANIA</mat-option>
+        <mat-option value=" SOUTH_AMERICA"> SOUTH_AMERICA</mat-option>
+    </mat-select>
+</mat-form-field>
+</p>
+<p>
+<mat-form-field>
+    <input matInput 
+        maxLength = "60"
+        placeholder="streetName" #streetName>
+</mat-form-field> 
+<mat-form-field>
+    <input matInput 
+        maxLength = "60"
+        placeholder="streetNumber" #streetNumber>
+</mat-form-field> 
+</p>
+<p>
+<mat-form-field>
+    <input matInput 
+        maxLength = "60"
+        placeholder="postalCode" #postalCode>
+</mat-form-field> 
+<mat-form-field>
+    <input matInput 
+        maxLength = "60"
+        placeholder="administrativeLevel2" #administrativeLevel2>
+</mat-form-field> 
+</p>
+<p>
+<mat-form-field>
+    <input matInput 
+        maxLength = "60"
+        placeholder="administrativeLevel1" #administrativeLevel1>
+</mat-form-field> 
+<mat-form-field>
+    <input matInput 
+        
+        placeholder="latitudeInDegrees" #latitudeInDegrees>
+</mat-form-field> 
+<mat-form-field>
+    <input matInput 
+        
+        placeholder="longitudeInDegrees" #longitudeInDegrees>
+</mat-form-field> 
+</p>
+<p>
+<button mat-raised-button (click)="creatlocation(
+name.value,
+normalizedName.value,
+function,
+city.value,
+country.value,
+continent,
+streetName.value,
+streetNumber.value,
+postalCode.value,
+administrativeLevel2.value,
+administrativeLevel1.value,
+latitudeInDegrees.value,
+longitudeInDegrees.value
+)">Create Location</button>
+</p>
+<p class="note" >*Please put the country code with 2 charactors*"</p>
+</div>
+</div> 

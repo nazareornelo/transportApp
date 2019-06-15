@@ -1,0 +1,31 @@
+table {
+
+  width: 100%;
+}
+ .bg {
+  
+    background-image:url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+  
+   
+    height: 100%;
+  
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.bg_table {
+
+  background:lightblue;
+  
+ 
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+}

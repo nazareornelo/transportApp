@@ -1,0 +1,114 @@
+<mat-dialog-content [formGroup]="form">
+
+  <mat-form-field>
+  <input matInput 
+              maxLength = "60"
+              placeholder="name"
+              formControlName="name">
+ </mat-form-field> 
+
+ <mat-form-field>
+  <input matInput
+              maxLength = "60"
+              placeholder="normalizedName"
+              formControlName="normalizedName">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput
+              placeholder="city"
+              formControlName="city">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput
+              placeholder="country"
+              formControlName="country">
+  </mat-form-field>
+
+  <mat-form-field>
+      <input matInput
+                  placeholder="continent"
+                  formControlName="continent">
+      </mat-form-field>
+    
+  <mat-form-field>
+  <input matInput
+              placeholder="streetName"
+              formControlName="streetName">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput
+              placeholder="streetNumber"
+              formControlName="streetNumber">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput
+              placeholder="postalCode"
+              formControlName="postalCode">
+
+<mat-form-field>
+  <input matInput
+              placeholder="administrativeLevel2"
+              formControlName="administrativeLevel2">
+  </mat-form-field>
+
+  <mat-form-field>
+
+  <input matInput
+              placeholder="administrativeLevel1"
+              formControlName="administrativeLevel1">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput
+              type = "number"
+              min="-180" max="180"
+              placeholder="latitudeInDegrees"
+              formControlName="latitudeInDegrees">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput
+              type = "number"
+              min="0" max="10"
+              placeholder="longitudeInDegrees"
+              formControlName="longitudeInDegrees">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput
+              placeholder="resourceId"
+              formControlName="resourceId">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput
+              placeholder="version"
+              formControlName="version">
+  </mat-form-field>
+
+  <mat-form-field>
+  <input matInput
+              placeholder="function"
+              formControlName="function">
+  </mat-form-field>
+
+
+
+
+<mat-dialog-actions>
+
+  <button 
+          (click)="close()">
+      Close
+  </button>
+
+  <button 
+          (click)="save()">
+      Save
+  </button>
+
+</mat-dialog-actions>
