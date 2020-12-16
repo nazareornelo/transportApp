@@ -22,9 +22,11 @@ export class CreateLocationComponent implements OnInit {
 
   ) { }
 
- ngOnInit() { 
-    
+ ngOnInit() {
+
   }
+
+
 
 creatlocation(
 s_name : string,
@@ -51,8 +53,8 @@ let add : Address = {
   streetNumber : s_streetNumber,
   postalCode : s_postalCode,
   administrativeLevel2 : s_administrativeLevel2 ,
-  administrativeLevel1 : s_administrativeLevel1 
-  
+  administrativeLevel1 : s_administrativeLevel1
+
  };
 
  let cood : Coordinates = {
@@ -64,15 +66,15 @@ let add : Address = {
 
  let location2  : Location = {
    name : s_name ,
-   normalizedName : s_normalizedName,   
-   address : add,     
-   coordinates : cood,      
-   function : s_funct      
+   normalizedName : s_normalizedName,
+   address : add,
+   coordinates : cood,
+   function : s_funct
 };
 
 console.log(location2);
 
-this.locationsService.creatLocation(location2).subscribe(data => 
+this.locationsService.creatLocation(location2).subscribe(data =>
   {
    console.log(data.resourceId);
    this.store.dispatch(new CreateNewLocation(data));
@@ -80,7 +82,7 @@ this.locationsService.creatLocation(location2).subscribe(data =>
 },
 error => {
   alert("Input all fields or contact the System Administrator");
-  
+
 });
 
   }
